@@ -470,7 +470,8 @@ public class HKProgressHUD: UIView {
             
             let group = UIMotionEffectGroup()
             group.motionEffects = [effectX, effectY]
-            bezelView?.addMotionEffect(group)
+            // FIXME: commented out due to bug on newer devices
+            //bezelView?.addMotionEffect(group)
         } else {
             if let effects = bezelView?.motionEffects {
                 for effect in effects {
